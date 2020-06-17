@@ -1,0 +1,265 @@
+.section .first {
+  display: flex;
+  margin-top: 10%;
+  color: #222f4f;
+}
+
+.section .first .words h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.section .first .decker {
+  width: 90%;
+}
+
+.section .first .decker h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.section .first p {
+  color: #9095a7;
+}
+
+.section .first .rowss {
+  display: flex;
+}
+
+.section .first .rowss button {
+  width: 130%;
+  background: #f3613c;
+}
+
+@media screen and (max-width: 880px) {
+  .section .first {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .section .first .words {
+    align-content: center;
+    text-align: center;
+  }
+}
+
+.section .second {
+  margin-top: 30px;
+  margin-bottom: 10%;
+}
+
+.section .second h3 {
+  color: #222f4f;
+}
+
+.section .second p {
+  color: #9095a7;
+}
+
+.section .second .heading {
+  margin-top: 100px;
+}
+
+.section .second .heading h3 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.section .second .contact {
+  margin-top: 5%;
+}
+
+.section .second .contact .card {
+  background: #fafafa;
+  border: none;
+  margin-bottom: 50px;
+}
+
+.section .second .contact img {
+  width: 20%;
+  margin-top: -60px;
+}
+
+@media screen and (max-width: 880px) {
+  .section .second .heading {
+    margin-bottom: 20%;
+  }
+}
+
+.section .third {
+  background: #f3613c;
+  color: white;
+}
+
+.section .third .container {
+  display: flex;
+}
+
+.section .third .text h3 {
+  margin-top: 60px;
+  font-weight: bold;
+  font-size: 2.3rem;
+  width: 80%;
+}
+
+.section .third button {
+  margin-left: auto;
+  color: #f3613c;
+  margin-top: 8%;
+  height: 4%;
+  background: white !important;
+}
+
+@media screen and (max-width: 880px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.section .second button, .section .final button, .header button {
+  color: white;
+  margin-left: auto;
+  background: #f3613c !important;
+}
+
+.section .second button:hover, .section .final button:hover, .header button:hover {
+  background: #f9af9c !important;
+}
+
+.section .final {
+  min-height: 30vh;
+  background: #1d1e25;
+  justify-content: center;
+  align-items: center;
+}
+
+.section .final .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.section .final .container .icons {
+  margin-top: 50%;
+}
+
+.section .final .container img {
+  margin-top: 20%;
+}
+
+@media screen and (max-width: 880px) {
+  .section .final .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.section .final .list-1,
+.section .final .list-2 {
+  margin-top: 20%;
+}
+
+.section .final .list-1 ul,
+.section .final .list-2 ul {
+  list-style: none;
+}
+
+.section .final .list-1 ul a,
+.section .final .list-2 ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.section .final .last {
+  margin-top: 40%;
+}
+
+.section .final .last .copyright {
+  color: #9095a7;
+  font-size: .6rem;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.section .final button {
+  width: 20%;
+}
+
+.section .final a:hover {
+  color: #f3613c !important;
+}
+
+* {
+  font-family: 'Be Vietnam', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header .container {
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 880px) {
+  .header .nav .links {
+    display: none;
+  }
+  .header .nav .menu {
+    display: contents;
+  }
+}
+
+.header ul {
+  list-style-type: none;
+  margin-left: 20%;
+}
+
+.header ul li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 1em;
+}
+
+.header ul a {
+  text-decoration: none;
+  color: #222f4f;
+}
+
+.header .content {
+  display: flex;
+  margin-top: 50px;
+}
+
+.header .content h2 {
+  font-size: 4rem;
+  font-weight: bolder;
+  color: #222f4f;
+}
+
+.header .content p {
+  padding-top: 40px;
+  font-size: 1.2rem;
+  color: #9095a7;
+  font-size: 16px;
+}
+
+.header .content button {
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 880px) {
+  .content {
+    text-align: center;
+    flex-direction: column;
+  }
+  .content .pic {
+    margin-top: 20%;
+  }
+  .content h2 {
+    font-size: 0.2rem;
+  }
+  .content img {
+    max-width: 100%;
+  }
+}

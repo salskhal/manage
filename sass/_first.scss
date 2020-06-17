@@ -1,0 +1,47 @@
+.section {
+    .first {
+        display: flex;
+        margin-top: 10%;
+        color: $primary-color;
+
+        .words {
+            h3 {
+                font-size: 40px;
+                font-weight: bold;
+            }
+        }
+
+        .decker {
+            width: 90%;
+
+            h4 {
+                font-size: $primary-font;
+                font-weight: bold;
+            }
+        }
+        
+        p {
+            color: $text-color;
+        }
+
+        .rowss {
+            display: flex;
+
+            button {
+                width: 130%;
+                background: $secondary-color;
+            }
+        }
+    }
+
+    @media screen and (max-width: 880px) {
+        .first {
+            flex-direction: column;
+            margin-top: 50px;
+            .words{
+                align-content: center;
+                text-align: center;
+            }
+        }
+    }
+}

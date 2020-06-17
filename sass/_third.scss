@@ -1,0 +1,35 @@
+.section{
+    .third {
+        background: $secondary-color;
+        color: white;
+
+        .container {
+            display: flex;
+        }
+
+        .text {
+            h3 {
+                margin-top: 60px;
+                font-weight: bold;
+                font-size: 2.3rem;
+                width: 80%;
+            }
+        }
+
+
+        button {
+            margin-left: auto;
+            color: $secondary-color;
+            margin-top: 8%;
+            height: 4%;
+            background: white !important;
+        }
+    }
+}
+
+@media screen and (max-width: 880px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,104 @@
+$primary-color: #222f4f;
+$secondary-color: #f3613c;
+$primary-font: 16px;
+$text-color: hsl(227, 12%, 61%);
+@import "./sass/first";
+@import "./sass/second";
+@import "./sass/third";
+@import "./sass/button";
+@import "./sass/final";
+
+* {
+    font-family: 'Be Vietnam', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+// .attribution {
+//     font-size: 11px;
+//     text-align: center;
+
+//     a {
+//         color: hsl(228, 45%, 44%);
+//     }
+// }
+
+.header {
+    .container {
+        padding-top: 40px;
+    }
+
+    .nav{
+       
+        @media screen and (max-width: 880px){
+            .links{
+                display: none;
+            }
+            .menu{
+                display: contents;
+            }
+        }
+    }
+   
+
+
+    ul {
+        list-style-type: none;
+        margin-left: 20%;
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+            font-size: 1em;
+        }
+
+        a {
+            text-decoration: none;
+            color: $primary-color;
+        }
+    }
+
+    button {
+        @extend %button-shared
+    }
+
+
+    .content {
+        display: flex;
+        margin-top: 50px;
+
+        h2 {
+            font-size: 4rem;
+            font-weight: bolder;
+            color: $primary-color;
+        }
+
+        p {
+            padding-top: 40px;
+            font-size: 1.2rem;
+            color: $text-color;
+            font-size: $primary-font;
+        }
+
+        button {
+            margin-top: 5%;
+        }
+    }
+}
+
+@media screen and (max-width: 880px){
+    .content{
+        text-align: center;
+        flex-direction: column;
+        .pic{
+            margin-top: 20%;
+        }
+        h2{
+            font-size: 0.2rem;
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+}

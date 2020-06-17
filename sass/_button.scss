@@ -1,0 +1,9 @@
+%button-shared {
+    color: white;
+    margin-left: auto;
+    background: $secondary-color !important;
+
+    &:hover {
+        background: lighten($color: $secondary-color, $amount: 20%) !important;
+    }
+}
