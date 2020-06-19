@@ -2,6 +2,7 @@
     .third {
         background: $secondary-color;
         color: white;
+        min-height: 30vh;
 
         .container {
             display: flex;
@@ -25,11 +26,13 @@
             background: white !important;
         }
     }
-}
 
-@media screen and (max-width: 880px){
-    .container{
-        flex-direction: column;
-        justify-content: center;
+
+    @media screen and (max-width: 880px){
+        .container{
+            flex-direction: column;
+            justify-content: center;
+        }        
     }
 }
+

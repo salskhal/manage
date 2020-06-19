@@ -88,6 +88,7 @@
 .section .third {
   background: #f3613c;
   color: white;
+  min-height: 30vh;
 }
 
 .section .third .container {
@@ -110,7 +111,7 @@
 }
 
 @media screen and (max-width: 880px) {
-  .container {
+  .section .container {
     flex-direction: column;
     justify-content: center;
   }
@@ -127,7 +128,7 @@
 }
 
 .section .final {
-  min-height: 30vh;
+  min-height: 35vh;
   background: #1d1e25;
   justify-content: center;
   align-items: center;
@@ -139,7 +140,7 @@
 }
 
 .section .final .container .icons {
-  margin-top: 50%;
+  margin-top: 40%;
 }
 
 .section .final .container img {
@@ -185,6 +186,10 @@
 
 .section .final button {
   width: 20%;
+}
+
+.section .final input {
+  width: 75%;
 }
 
 .section .final a:hover {

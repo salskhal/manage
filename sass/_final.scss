@@ -1,6 +1,6 @@
 .section {
     .final {
-        min-height: 30vh;
+        min-height: 35vh;
         background: hsl(233, 12%, 13%);
         justify-content: center;
         align-items: center;
@@ -10,7 +10,7 @@
             grid-template-columns: repeat(4, 1fr);
 
             .icons {
-                margin-top: 50%;
+                margin-top: 40%;
             }
             img{
                 margin-top: 20%;
@@ -54,6 +54,9 @@
         button {
             @extend %button-shared;
             width: 20%;
+        }
+        input{
+            width: 75%;
         }
 
         a {
